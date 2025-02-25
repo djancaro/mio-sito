@@ -14,6 +14,23 @@ body {
     font-family: 'UnicaOne', 'sans-serif';
     text-transform: uppercase;
     line-height: 1.5;
+    background: 
+        linear-gradient(-21deg,
+        #F2FAFD 0%,
+        #EFEDFB 46%,
+        #EAF1FB 100%
+        );
+}
+
+h1 {
+    font-size: 60px;
+    color: #241254;
+    line-height: 1.2;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 32px;
 }
 
 header {
@@ -131,4 +148,90 @@ nav ul {
     position: absolute;
     left: 367px;
     top: 170px;
+}
+
+main {
+    display: flex;
+    justify-content: left;
+    margin: 72px 112px 0px 112px;
+}
+
+.card {
+    padding: 16px 0px 24px 0px;
+}
+
+.card-image {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 25%);
+    border-radius: 8px;
+}
+
+.card-image:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 35%);
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 200;
+    color: #241254;
+    line-height: 1.2;
+    letter-spacing: 0.64px;
+    margin: 0;
+}
+
+p {
+    font-family: 'Satoshi';
+    font-weight: 100;
+    font-size: 16px;
+    text-transform: none;
+    color: #12092A;
+    margin: 0;
+}
+
+.card-title {
+    padding: 16px 0px 8px 0px;
+}
+
+.project-description {
+    width: 336px;
+    padding: 0px 16px 16px 0px;
+    margin: 0;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.keypoints {
+    width: 336px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    padding-bottom: 12px;
+}
+
+.keypoint-description {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.btn-primary {
+    background-color: #4923A9;
+    color: #fff;
+    font-family: 'UnicaOne';
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.02px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border-style: none;
+    margin: 12px 0px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 35%);
+}
+
+.btn-primary:hover {
+    background-color: #F198E8;
+    color: #12092A;
 }
