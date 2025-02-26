@@ -104,6 +104,7 @@ nav ul {
     height: fit-content;
     line-height: 1;
     position: relative;
+    padding: 0;
 }
 
 .hero-image {
@@ -151,13 +152,20 @@ nav ul {
 }
 
 main {
-    display: flex;
-    justify-content: left;
     margin: 72px 112px 0px 112px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 56px;
 }
 
 .card {
     padding: 16px 0px 24px 0px;
+    width: fit-content;
 }
 
 .card-image {
@@ -193,7 +201,7 @@ p {
 
 .project-description {
     width: 336px;
-    padding: 0px 16px 16px 0px;
+    padding-bottom: 16px;
     margin: 0;
 }
 
@@ -234,4 +242,24 @@ p {
 .btn-primary:hover {
     background-color: #F198E8;
     color: #12092A;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #241254;
+    border: #241254 1px solid;
+    font-family: 'UnicaOne';
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.02px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    margin: 12px 0px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 35%);
+}
+
+.btn-secondary:hover{
+    background-color: #9DEAFB;
 }
