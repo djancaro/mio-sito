@@ -186,6 +186,15 @@ h4 {
     margin: 0;
 }
 
+h5 {
+    font-size: 24px;
+    font-weight: 200;
+    color: #241254;
+    margin: 0px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+}
+
 p {
     font-family: 'Satoshi';
     font-weight: 100;
@@ -207,6 +216,11 @@ p {
 
 .card-text {
     margin: 0;
+}
+
+.bullet {
+    width: 12px;
+    height: auto;
 }
 
 .keypoints {
@@ -232,6 +246,8 @@ p {
     text-transform: uppercase;
     line-height: 1.5;
     letter-spacing: 0.02px;
+    width: fit-content;
+    height: 48px;
     padding: 8px 24px;
     border-radius: 8px;
     border-style: none;
@@ -254,12 +270,56 @@ p {
     text-transform: uppercase;
     line-height: 1.5;
     letter-spacing: 0.02px;
+    width: fit-content;
+    height: 48px;
     padding: 8px 24px;
     border-radius: 8px;
     margin: 12px 0px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 35%);
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: #9DEAFB;
+}
+
+.about {
+    display: flex;
+    gap: 24px;
+}
+
+.about-img {
+    padding-top: 16px;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hello-there {
+    height: auto;
+    width: 215px;
+}
+
+.skills-hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skills {
+    display: flex;
+    gap: 12px;
+}
+
+.skill-description {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+#cv-button {
+    margin-bottom: 0;
+    margin-top: 24px;
 }
