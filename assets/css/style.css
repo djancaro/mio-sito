@@ -39,11 +39,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
     color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 20%);
     z-index: 1;
     background-color: #fff;
+    top: 0;
 }
 
 nav {
@@ -79,6 +80,7 @@ nav ul {
 
 .tab-header a:hover {
     color: #BD19AB;
+    transition: 150ms ease-out;
 }
 
 .tab-header {
@@ -91,6 +93,7 @@ nav ul {
     align-items: center;
     flex-direction: column;
     position: relative;
+    margin-top: 100px;
 }
 
 .display-text {
@@ -175,6 +178,7 @@ main {
 
 .card-image:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 35%);
+    transition: 150ms ease-out;
 }
 
 h4 {
@@ -258,6 +262,7 @@ p {
 .btn-primary:hover {
     background-color: #F198E8;
     color: #12092A;
+    transition: 150ms ease-out;
 }
 
 .btn-secondary {
@@ -280,6 +285,7 @@ p {
 
 .btn-secondary:hover {
     background-color: #9DEAFB;
+    transition: 150ms ease-out;
 }
 
 .about {
@@ -322,4 +328,57 @@ p {
 #cv-button {
     margin-bottom: 0;
     margin-top: 24px;
+}
+
+footer {
+    background-color: #361A7F;
+    padding: 58px 112px;
+    margin-top: 144px;
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-header {
+    color: #fff;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration-thickness: 8%;
+    text-underline-offset: 23%;
+}
+
+.footer-link:hover {
+    text-decoration-thickness: 12%;
+    font-weight: 500;
+    transition: 150ms ease-out;
+}
+
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: end;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: flex-end;
 }
