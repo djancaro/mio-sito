@@ -72,6 +72,10 @@ nav ul {
     width: auto;
 }
 
+.img-mobile {
+    display: none;
+}
+
 .tab-header a {
     font-size: 20px;
     color: #241254;
@@ -86,6 +90,16 @@ nav ul {
 .tab-header {
     display: flex;
     gap: 56px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    float: left;
+    cursor: pointer;
 }
 
 .hero {
@@ -381,4 +395,58 @@ footer {
     gap: 12px;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 1090px) {
+
+    header {
+        height: 100px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        padding: 24px;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .tab-header {
+        display: none;
+    }
+
+    .linkedin .img-desktop {
+        display: none;
+    }
+
+    .linkedin .img-mobile {
+        display: flex;
+        height: 32px;
+        width: auto;
+
+    }
+
+    #menu-toggle:checked + .nav-menu {
+        display: flex;
+    }
+
+    .logo {
+        display: flex
+    }
 }
