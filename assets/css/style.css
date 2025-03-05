@@ -131,6 +131,10 @@ nav ul {
     width: 100%;
 }
 
+.hero-mobile {
+    display: none;
+}
+
 .hero-content {
     background-color: #361A7F;
     display: flex;
@@ -448,5 +452,93 @@ footer {
 
     .logo {
         display: flex
+    }
+}
+
+@media screen and (max-width: 1012px) {
+
+    .hero-content {
+        width: 272px;
+        height: 296px;
+        border-radius: 20px;
+        padding: 24px;
+    }
+
+    .display-text {
+        font-size: 58px;
+        line-height: 1.1;
+    }
+
+    .hero-text {
+        width: 230px;
+    }
+
+    .ish-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .hero-content {
+        top: 80%;
+    }
+
+    main {
+        margin: 180px 32px 0px 32px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-content {
+        top: 80%;
+    }
+
+    .hero-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .card-image {
+        width: 327px;
+        height: auto;
+    }
+
+    .card {
+        width: 327px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    h1 {
+        line-height: 1.2;
+        font-weight: 100;
+        letter-spacing: 1.2px;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .card-button {
+        display: flex;
+        justify-content: center;
     }
 }
