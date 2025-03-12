@@ -525,6 +525,47 @@ footer {
     display: none;
 }
 
+.form {
+    padding-top: 112px;
+}
+
+#contact-form {
+    display: grid;
+    gap: 24px;
+}
+
+.mainfields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.labels-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.textfield {
+    height: 44px;
+    border: 1px solid #979595;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 112px;
+    border: 1px solid #979595;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+label {
+    font-family: 'Satoshi';
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 500;
+}
+
 @media screen and (max-width: 1200px) {
     .projects {
         grid-template-columns: repeat(2, 1fr);
@@ -795,6 +836,10 @@ footer {
 
     .edu-date2 {
         display: block;
+    }
+
+    .mainfields {
+        grid-template-columns: 1fr;
     }
 }
 

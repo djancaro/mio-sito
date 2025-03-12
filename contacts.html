@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({ publicKey: "EiMLq7F_CEK6aRSHe" });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("contact-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                emailjs.sendForm('service_q1prg1m', 'template_77ig8wg', this)
+                .then(() => {
+                    alert('Il messaggio è stato inviato correttamente! Grazie!');
+
+                    location.reload();
+                }, (error) => {
+                    alert('FAILED...', error);
+                });
+            })
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -21,8 +43,8 @@
                 </li>
                 <li class="tab-header">
                     <a href="index.html">Home</a>
-                    <a href="/">Progetti</a>
-                    <a href="/">Chi sono</a>
+                    <a href="index.html#projects">Progetti</a>
+                    <a href="index.html#about-me">Chi sono</a>
                     <a href="resume.html">Curriculum</a>
                     <a href="contacts.html">Contattami</a>
                 </li>
@@ -39,6 +61,54 @@
     </header>
     <main class="form">
         <h1>Contattami</h1>
+        <form id="contact-form">
+            <div class="mainfields">
+                <div class="labels-fields">
+                    <label for="user-name">Nome*</label>
+                    <input type="text" name="user-name" class="textfield" required />
+                </div>
+                <div class="labels-fields">
+                    <label for="user-surname">Cognome*</label>
+                    <input type="text" name="user-surname" class="textfield" required />
+                </div>
+                <div class="labels-fields">
+                    <label for="user-email">Email*</label>
+                    <input type="email" name="user-email" class="textfield" required />
+                </div>
+                <div class="labels-fields">
+                <label for="user-company">Nome azienda</label>
+                <input type="text" name="user-company" class="textfield" />
+                </div>
+            </div>
+            <div class="labels-fields">
+                <label for="message">Messaggio*</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Invia il messaggio" class="btn-primary"/>
+            </div>
+        </form>
     </main>
+    <footer>
+        <div class="footer-sections">
+            <div class="contacts-section">
+                <h4 class="footer-header">Restiamo in contatto</h4>
+                <div class="contact-links">
+                    <a href="contacts.html" class="footer-link"><p class="footer-link">Contattami</p>
+                    </a>
+                    <img src="assets/images/Line.svg" alt="" class="line">
+                    <a href="/" class="footer-link"><p class="footer-link">gianmarco.cara@outlook.it</p>
+                    </a>
+                </div>
+            </div>
+            <div class="social-section">
+                <h4 class="footer-header">Mi trovi anche su</h4>
+                <div class="social-links">
+                    <a href="/" class="footer-link"><img src="assets/images/linked-in.svg" alt="linked-in link">
+                    </a>
+                    <a href="/" class="footer-link"><img src="assets/images/github-logo.svg" alt="github link">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
