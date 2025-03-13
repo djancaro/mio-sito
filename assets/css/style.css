@@ -20,6 +20,7 @@ body {
         #EFEDFB 46%,
         #EAF1FB 100%
         );
+    background-size: 100% 100%;
 }
 
 h1 {
@@ -290,6 +291,7 @@ main {
     background-color: #F198E8;
     color: #12092A;
     transition: 150ms ease-out;
+    cursor: pointer;
 }
 
 .btn-secondary {
@@ -313,6 +315,7 @@ main {
 .btn-secondary:hover {
     background-color: #9DEAFB;
     transition: 150ms ease-out;
+    cursor: pointer;
 }
 
 .about {
@@ -648,6 +651,14 @@ label {
         gap: 16px;
     }
 
+    .mainfields {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        margin-bottom: 25%;
+    }
+
 }
 
 @media screen and (max-width: 1012px) {
@@ -671,6 +682,7 @@ label {
     .ish-text {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -707,6 +719,7 @@ label {
     .side-notes {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .dividing-line1 {
@@ -738,7 +751,11 @@ label {
     }
 
     main {
-        margin: 72px 32px 0px 32px;
+        margin: 112px 32px 0px 32px;
+    }
+
+    .homepage-content {
+        margin-top: 25%;
     }
 
     footer {
@@ -749,6 +766,7 @@ label {
         flex-wrap: wrap;
         gap: 16px;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -824,6 +842,7 @@ label {
 
     .personal-info {
         flex-direction: column;
+        padding-top: 72px;
     }
 
     .infos {
@@ -837,15 +856,12 @@ label {
     .edu-date2 {
         display: block;
     }
-
-    .mainfields {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media screen and (max-width: 576px) {
     .hero-content {
         top: 80%;
+        padding: 12px;
     }
 
     .hero-mobile {
@@ -857,12 +873,20 @@ label {
         display: none;
     }
 
+    .homepage-content {
+        margin-top: 40%;
+    }
+
     h1 {
         font-size: 48px;
     }
 
     h2 {
         font-size: 40px;
+    }
+
+    .projects {
+        gap: 8px;
     }
 
     .card-image {
@@ -895,4 +919,15 @@ label {
         justify-content: flex-start;
     }
 
+}
+
+@media screen and (max-width: 380px){
+    main {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .homepage-content {
+        margin-top: 40%;
+    }
 }
