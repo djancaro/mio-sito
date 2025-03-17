@@ -32,15 +32,15 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Menu principale">
             <ul class="nav-menu">
-                <div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+                <div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-label="apri il menu">
                     <img src="assets/images/BURGER MENU.svg" alt="">
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas">
                     <div class="offcanvas-header">
                         <h4>Menu</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi il menu"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="menu-list">
@@ -64,7 +64,7 @@
                 </div>
                 <li class="logo">
                     <a href="index.html">
-                        <img src="assets/images/G. Cara.svg" alt="Logo del sito">
+                        <img src="assets/images/G. Cara.svg" alt="Logo del sito Gianmarco Cara">
                     </a>
                 </li>
                 <li class="tab-header">
@@ -76,10 +76,10 @@
                 </li>
                 <li class="linkedin">
                     <a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" target="_blank">
-                        <img src="assets/images/LinkedIn_2021.svg" alt="" class="img-desktop">
+                        <img src="assets/images/LinkedIn_2021.svg" alt="Link al profilo Linkedin Gianmarco Cara" class="img-desktop">
                     </a>
                     <a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" target="_blank">
-                        <img src="assets/images/linked-in mobile.svg" alt="" class="img-mobile">
+                        <img src="assets/images/linked-in mobile.svg" alt="Link al profilo Linkedin Gianmarco Cara" class="img-mobile">
                     </a>
                 </li>
             </ul>
@@ -91,24 +91,24 @@
             <div class="mainfields">
                 <div class="labels-fields">
                     <label for="user-name">Nome*</label>
-                    <input type="text" name="user-name" class="textfield" required />
+                    <input type="text" name="user-name" class="textfield" aria-label="Nome" required />
                 </div>
                 <div class="labels-fields">
                     <label for="user-surname">Cognome*</label>
-                    <input type="text" name="user-surname" class="textfield" required />
+                    <input type="text" name="user-surname" class="textfield" aria-label="Cognome" required />
                 </div>
                 <div class="labels-fields">
                     <label for="user-email">Email*</label>
-                    <input type="email" name="user-email" class="textfield" required />
+                    <input type="email" name="user-email" class="textfield" aria-label="email" required />
                 </div>
                 <div class="labels-fields">
                 <label for="user-company">Nome azienda</label>
-                <input type="text" name="user-company" class="textfield" />
+                <input type="text" name="user-company" class="textfield" aria-label="nome azienda" />
                 </div>
             </div>
             <div class="labels-fields">
                 <label for="message">Messaggio*</label>
-                <textarea name="message"></textarea>
+                <textarea name="message" aria-label="inserisci il messaggio"></textarea>
                 <input type="submit" value="Invia il messaggio" class="btn-primary"/>
             </div>
         </form>
@@ -121,7 +121,7 @@
                     <a href="contacts.html" class="footer-link"><p class="footer-link">Contattami</p>
                     </a>
                     <img src="assets/images/Line.svg" alt="" class="line">
-                    <a href="/" class="footer-link"><p class="footer-link">gianmarco.cara@outlook.it</p>
+                    <a href="mailto:gianmarco.cara@outlook.it" class="footer-link"><p class="footer-link">gianmarco.cara@outlook.it</p>
                     </a>
                 </div>
             </div>
@@ -129,10 +129,10 @@
                 <h4 class="footer-header">Mi trovi anche su</h4>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" class="footer-link" target="_blank">
-                        <img src="assets/images/linked-in.svg" alt="linked-in link">
+                        <img src="assets/images/linked-in.svg" alt="profilo linked-in">
                     </a>
                     <a href="https://github.com/djancaro" class="footer-link" target="_blank">
-                        <img src="assets/images/github-logo.svg" alt="github link">
+                        <img src="assets/images/github-logo.svg" alt="profilo github">
                     </a>
                 </div>
             </div>

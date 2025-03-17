@@ -10,15 +10,15 @@
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav aria-label="Menu principale">
 				<ul class="nav-menu">
-					<div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+					<div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-label="apri il menu">
 						<img src="assets/images/BURGER MENU.svg" alt="">
 					</div>
 					<div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas">
 						<div class="offcanvas-header">
 							<h4>Menu</h4>
-							<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi il menu"></button>
 						</div>
 						<div class="offcanvas-body">
 							<ul class="menu-list">
@@ -42,7 +42,7 @@
 					</div>
 					<li class="logo">
 						<a href="index.html">
-							<img src="assets/images/G. Cara.svg" alt="Logo del sito">
+							<img src="assets/images/G. Cara.svg" alt="Logo del sito Gianmarco Cara">
 						</a>
 					</li>
 					<li class="tab-header">
@@ -54,10 +54,10 @@
 					</li>
 					<li class="linkedin">
 						<a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" target="_blank">
-							<img src="assets/images/LinkedIn_2021.svg" alt="" class="img-desktop">
+							<img src="assets/images/LinkedIn_2021.svg" alt="Link al profilo Linkedin Gianmarco Cara" class="img-desktop">
 						</a>
 						<a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" target="_blank">
-							<img src="assets/images/linked-in mobile.svg" alt="" class="img-mobile">
+							<img src="assets/images/linked-in mobile.svg" alt="Link al profilo Linkedin Gianmarco Cara" class="img-mobile">
 						</a>
 					</li>
 				</ul>
@@ -77,11 +77,11 @@
 			<section class="projects" id="projects">
 				<article class="project">
 					<div class="project-card">
-						<a href="/">
+						<a href="documents/pof.pdf" target="_blank">
 							<img src="assets/images/pof.svg" alt="Progetto Planty of Food" class="card-image">
 						</a>
 						<div class="card-title">
-							<h4>Planty of Food</h4>
+							<h2 class="project-title">Planty of Food</h2>
 						</div>
 						<div class="project-description">
 							<p class="card-text">Studio e creazione della <b>brand identity</b> per un e-commerce di prodotti vegetali.</p>
@@ -105,7 +105,7 @@
 							</div>
 						</div>
 						<div class="card-button">
-						<button type="button" class="btn-primary" onclick="window.open('documents/pof.pdf', '_blank')">Guarda il progetto</button>
+						<button type="button" class="btn-primary" onclick="window.open('documents/pof.pdf', '_blank')" aria-label="Guarda il progetto">Guarda il progetto</button>
 						</div>
 					</div>
 				</article>
@@ -115,7 +115,7 @@
 							<img src="assets/images/ivegan pt. I.svg" alt="Progetto iVegan prima parte" class="card-image">
 						</a>
 						<div class="card-title">
-							<h4>iVegan - parte I</h4>
+							<h2 class="project-title">iVegan - parte I</h2>
 						</div>
 						<div class="project-description">
 							<p class="card-text">Analisi delle criticità riguardanti <b>l’usabilità del sito di iVegan</b>, con proposta di soluzioni.</p>
@@ -139,7 +139,7 @@
 							</div>
 						</div>
 						<div class="card-button">
-						<button type="button" class="btn-primary">Guarda il progetto</button>
+						<button type="button" class="btn-primary" aria-label="Guarda il progetto">Guarda il progetto</button>
 						</div>
 					</div>
 				</article>
@@ -149,7 +149,7 @@
 							<img src="assets/images/ivegan pt. II.svg" alt="Progetto iVegan seconda parte" class="card-image">
 						</a>
 						<div class="card-title">
-							<h4>iVegan - parte II</h4>
+							<h2 class="project-title">iVegan - parte II</h2>
 						</div>
 						<div class="project-description">
 							<p class="card-text">Proposta di <b>wireframe e UI per desktop e mobile</b> del sito di iVegan.</p>
@@ -169,17 +169,17 @@
 							</div>
 						</div>
 						<div class="card-button">
-							<button type="button" class="btn-primary">Guarda il progetto</button>
+							<button type="button" class="btn-primary" aria-label="Guarda il progetto">Guarda il progetto</button>
 						</div>
 					</div>
 				</article>
 				<article class="project">
 					<div class="project-card">
-						<a href="/">
+						<a href="documents/copywriting.pdf" target="_blank">
 							<img src="assets/images/copywriting.svg" alt="Progetto copywriting per il vestito verde" class="card-image">
 						</a>
 						<div class="card-title">
-							<h4>Il vestito verde</h4>
+							<h2 class="project-title">Il vestito verde</h2>
 						</div>
 						<div class="project-description">
 							<p class="card-text">Scrittura di un <b>articolo</b> per il <b>blog di moda sostenibile “Il vestito verde”</b>.</p>
@@ -203,7 +203,7 @@
 							</div>
 						</div>
 						<div class="card-button">
-							<button type="button" class="btn-primary" onclick="window.open('documents/copywriting.pdf', '_blank')">Guarda il progetto</button>
+							<button type="button" class="btn-primary" onclick="window.open('documents/copywriting.pdf', '_blank')" aria-label="Guarda il progetto">Guarda il progetto</button>
 						</div>
 					</div>
 				</article>
@@ -213,7 +213,7 @@
 							<img src="assets/images/wip.svg" alt="Progetto work in progress" class="card-image">
 						</a>
 						<div class="card-title">
-							<h4>Work in progress</h4>
+							<h2 class="project-title">Work in progress</h2>
 						</div>
 						<div class="project-description">
 							<p class="card-text">Sono sempre al lavoro su <b>qualcosa di nuovo...</b> A presto!</p>
@@ -233,7 +233,7 @@
 							</div>
 						</div>
 						<div class="card-button">
-							<button type="button" class="btn-secondary">Ricevi una notifica</button>
+							<button type="button" class="btn-primary-disabled" disabled>Coming Soon</button>
 						</div>
 					</div>
 				</article>
@@ -289,8 +289,8 @@
 						</div>
 					</div>
 					<div class="cv-button">
-						<button type="button" class="btn-primary" id="cv-button" onclick="window.location.href='resume.html'">Guarda il mio CV</button>
-					</div>
+						<button type="button" class="btn-primary" id="cv-button" onclick="window.location.href='resume.html'" aria-label="Guarda il mio curriculum">Guarda il mio CV</button>
+					</div>																
 				</div>
 			</section>
 		</main>
@@ -302,7 +302,7 @@
 						<a href="contacts.html" class="footer-link"><p class="footer-link">Contattami</p>
 						</a>
 						<img src="assets/images/Line.svg" alt="" class="line">
-						<a href="/" class="footer-link"><p class="footer-link">gianmarco.cara@outlook.it</p>
+						<a href="mailto:gianmarco.cara@outlook.it" class="footer-link"><p class="footer-link">gianmarco.cara@outlook.it</p>
 						</a>
 					</div>
 				</div>
@@ -310,10 +310,10 @@
 					<h4 class="footer-header">Mi trovi anche su</h4>
 					<div class="social-links">
 						<a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" class="footer-link" target="_blank">
-							<img src="assets/images/linked-in.svg" alt="linked-in link">
+							<img src="assets/images/linked-in.svg" alt="profilo linked-in">
 						</a>
 						<a href="https://github.com/djancaro" target="_blank" class="footer-link">
-							<img src="assets/images/github-logo.svg" alt="github link">
+							<img src="assets/images/github-logo.svg" alt="profilo github">
 						</a>
 					</div>
 				</div>

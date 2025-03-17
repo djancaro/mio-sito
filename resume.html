@@ -10,15 +10,15 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Menu principale">
             <ul class="nav-menu">
-                <div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+                <div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-label="apri il menu">
                     <img src="assets/images/BURGER MENU.svg" alt="">
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas">
                     <div class="offcanvas-header">
                         <h4>Menu</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi il menu"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="menu-list">
@@ -42,7 +42,7 @@
                 </div>
                 <li class="logo">
                     <a href="index.html">
-                        <img src="assets/images/G. Cara.svg" alt="Logo del sito">
+                        <img src="assets/images/G. Cara.svg" alt="Logo del sito Gianmarco Cara">
                     </a>
                 </li>
                 <li class="tab-header">
@@ -54,10 +54,10 @@
                 </li>
                 <li class="linkedin">
                     <a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" target="_blank">
-                        <img src="assets/images/LinkedIn_2021.svg" alt="" class="img-desktop">
+                        <img src="assets/images/LinkedIn_2021.svg" alt="Link al profilo Linkedin Gianmarco Cara" class="img-desktop">
                     </a>
                     <a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" target="_blank">
-                        <img src="assets/images/linked-in mobile.svg" alt="" class="img-mobile">
+                        <img src="assets/images/linked-in mobile.svg" alt="Link al profilo Linkedin Gianmarco Cara" class="img-mobile">
                     </a>
                 </li>
             </ul>
@@ -65,16 +65,16 @@
     </header>
     <main>
         <div class="personal-info">
-            <img src="assets/images/img-cv.png" alt="foto Curriculum">
+            <img src="assets/images/img-cv.png" alt="foto Curriculum Gianmarco Cara">
             <div class="infos">
-                <h2>Gianmarco Cara</h2>
-                <h5>UX/UI Designer</h5>
+                <h1 class="my-name">Gianmarco Cara</h1>
+                <h2 class="job-description">UX/UI Designer</h2>
             </div>
         </div>
         <section class="cv">
             <div class="side-notes">
                 <div class="tools-skills">
-                    <h5>Strumenti</h5>
+                    <h3 class="section-title">Strumenti</h3>
                     <div class="ts-description">
                         <ul class="ts-points">
                             <li>Figma</li>
@@ -86,7 +86,7 @@
                 </div>
                 <hr class="dividing-line1"/>
                 <div class="tools-skills">
-                    <h5>Skill</h5>
+                    <h3 class="section-title">Skill</h3>
                     <div class="ts-description">
                         <ul class="ts-points">
                             <li>UX/UI prototyping</li>
@@ -99,81 +99,85 @@
                 </div>
                 <hr class="dividing-line1"/>
                 <div class="tools-skills">
-                    <h5>Progetti</h5>
+                    <h3 class="section-title">Progetti</h3>
                     <a href="index.html#projects" class="my-projects">Guarda i progetti</a>
                 </div>
                 <hr class="dividing-line1"/>
                 <div class="tools-skills">
-                    <h5>Mi trovi su</h5>
+                    <h3 class="section-title">Mi trovi su</h3>
                     <div class="cv-social-links">
                         <a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" class="social-networks" target="_blank">
-                            <img src="assets/images/linkedin3.svg" alt="">gianmarco.cara
+                            <img src="assets/images/linkedin3.svg" alt="Profilo linkedin Gianmarco Cara">gianmarco.cara
                         </a>
                     </div>
                     <div class="cv-social-links">
                         <a href="https://github.com/djancaro" class="social-networks" target="_blank">
-                            <img src="assets/images/github2.svg" alt="">djancaro
+                            <img src="assets/images/github2.svg" alt="Profilo github Gianmarco Cara">djancaro
                         </a>
                     </div>
                 </div>
             </div>
             <hr class="dividing-line2"/>
             <div class="main-points">
-                <h5>Formazione</h5>
-                <div>
-                    <div class="education">
-                        <p class="edu-title">Master in UX/UI Design</p>
-                        <p class="edu-date">09/2023 - <i>in corso</i></p>
+                <section>
+                    <h3 class="section-title">Formazione</h3>
+                    <div>
+                        <div class="education">
+                            <p class="edu-title">Master in UX/UI Design</p>
+                            <p class="edu-date">09/2023 - <i>in corso</i></p>
+                        </div>
+                        <p>Start2Impact University</p>
+                        <p class="edu-date2">09/2023 - <i>in corso</i></p>
+                        <ul class="edu-points">
+                            <li>Principi fondamentali di UX design process, dalla fase iniziale di ricerca e analisi, fino alla mappatura di user journey coerenti con il target di riferimento</li>
+                            <li>Tecniche di <i>low-</i>, <i>mid-</i> e <i>hi-fi wireframing</i> per la visualizzazione di contenuti di pagine web complesse e relativa architettura dell’informazione</li>
+                            <li>Design di prototipi UI desktop e mobile con l’utilizzo di Figma</li>
+                            <li>Apprendimento di tecniche di <i>design thinking</i> finalizzate alla creazione di un brand</li>
+                            <li>Tecniche di <i>copywriting</i></li>
+                        </ul>
                     </div>
-                    <p>Start2Impact University</p>
-                    <p class="edu-date2">09/2023 - <i>in corso</i></p>
-                    <ul class="edu-points">
-                        <li>Principi fondamentali di UX design process, dalla fase iniziale di ricerca e analisi, fino alla mappatura di user journey coerenti con il target di riferimento</li>
-                        <li>Tecniche di <i>low-</i>, <i>mid-</i> e <i>hi-fi wireframing</i> per la visualizzazione di contenuti di pagine web complesse e relativa architettura dell’informazione</li>
-                        <li>Design di prototipi UI desktop e mobile con l’utilizzo di Figma</li>
-                        <li>Apprendimento di tecniche di <i>design thinking</i> finalizzate alla creazione di un brand</li>
-                        <li>Tecniche di <i>copywriting</i></li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="education">
-                        <p class="edu-title">Master Localizzazione Videoludica</p>
-                        <p class="edu-date">04/2021 - 07/2021</p>
+                    <div>
+                        <div class="education">
+                            <p class="edu-title">Master Localizzazione Videoludica</p>
+                            <p class="edu-date">04/2021 - 07/2021</p>
+                        </div>
+                        <p>GLOS - Games Localization School</p>
+                        <p class="edu-date2">04/2021 - 07/2021</p>
+                        <ul class="edu-points">
+                            <li>Tecniche di traduzione del videogioco, con particolare attenzione alla traduzione <i>blindfolded</i></li>
+                            <li>Principali funzionalità dei CAT Tools e software di sottotitolaggio</li>
+                            <li>Tecniche di <i>transcreation</i> e scrittura creativa</li>
+                        </ul>
                     </div>
-                    <p>GLOS - Games Localization School</p>
-                    <p class="edu-date2">04/2021 - 07/2021</p>
-                    <ul class="edu-points">
-                        <li>Tecniche di traduzione del videogioco, con particolare attenzione alla traduzione <i>blindfolded</i></li>
-                        <li>Principali funzionalità dei CAT Tools e software di sottotitolaggio</li>
-                        <li>Tecniche di <i>transcreation</i> e scrittura creativa</li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="education">
-                        <p class="edu-title">Laurea triennale in Lingue e Letterature moderne</p>
-                        <p class="edu-date">09/2015 - 03/2019</p>
+                    <div>
+                        <div class="education">
+                            <p class="edu-title">Laurea triennale in Lingue e Letterature moderne</p>
+                            <p class="edu-date">09/2015 - 03/2019</p>
+                        </div>
+                        <p>Università degli studi di Roma Tor Vergata</p>
+                        <p class="edu-date2">09/2015 - 03/2019</p>
+                        <ul class="edu-points">
+                            <li>Conoscenze linguistiche approfondite e apprendimento di tecniche di traduzione con linguaggio settoriale</li>
+                        </ul>
                     </div>
-                    <p>Università degli studi di Roma Tor Vergata</p>
-                    <p class="edu-date2">09/2015 - 03/2019</p>
-                    <ul class="edu-points">
-                        <li>Conoscenze linguistiche approfondite e apprendimento di tecniche di traduzione con linguaggio settoriale</li>
-                    </ul>
-                </div>
-                <hr class="dividing-line3"/>
-                <h5>Esperienza</h5>
-                <div>
-                    <div class="education">
-                        <p class="edu-title">Copywriter</p>
-                        <p class="edu-date">02/2023 - 09/2023</p>
+                    <hr class="dividing-line3"/>
+                </section>
+                <section>
+                    <h3 class="section-title">Esperienza</h3>
+                    <div>
+                        <div class="education">
+                            <p class="edu-title">Copywriter</p>
+                            <p class="edu-date">02/2023 - 09/2023</p>
+                        </div>
+                        <p class="edu-date2">02/2023 - 09/2023</p>
+                        <p>Med4Care</p>
+                        <ul class="edu-points">
+                            <li>Scrittura e correzione di bozze di articoli a carattere divulgativo con particolare attenzione all’ottimizzazione per i motori di ricerca (SEO) </li>
+                            <li><i>Project managing</i> con raccolta di fonti scientifiche autorevoli e assegnazione di progetti di scrittura</li>
+                            <li>Supporto alla creazione di video e immagini a corredo degli articoli</li>
+                        </ul>
                     </div>
-                    <p class="edu-date2">02/2023 - 09/2023</p>
-                    <p>Med4Care</p>
-                    <ul class="edu-points">
-                        <li>Scrittura e correzione di bozze di articoli a carattere divulgativo con particolare attenzione all’ottimizzazione per i motori di ricerca (SEO) </li>
-                        <li><i>Project managing</i> con raccolta di fonti scientifiche autorevoli e assegnazione di progetti di scrittura</li>
-                        <li>Supporto alla creazione di video e immagini a corredo degli articoli</li>
-                    </ul>
-                </div>
+                </section>
                 <hr class="dividing-line4"/>
                 <button type="button" class="btn-primary" id="cv-button1">Scarica il CV</button>
             </div>
@@ -190,7 +194,7 @@
                     <a href="contacts.html" class="footer-link"><p class="footer-link">Contattami</p>
                     </a>
                     <img src="assets/images/Line.svg" alt="" class="line">
-                    <a href="/" class="footer-link"><p class="footer-link">gianmarco.cara@outlook.it</p>
+                    <a href="mailto:gianmarco.cara@outlook.it" class="footer-link"><p class="footer-link">gianmarco.cara@outlook.it</p>
                     </a>
                 </div>
             </div>
@@ -198,10 +202,10 @@
                 <h4 class="footer-header">Mi trovi anche su</h4>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/gianmarco-cara-809701356/" class="footer-link" target="_blank">
-                        <img src="assets/images/linked-in.svg" alt="linked-in link">
+                        <img src="assets/images/linked-in.svg" alt="profilo linked-in">
                     </a>
                     <a href="https://github.com/djancaro" class="footer-link" target="_blank">
-                        <img src="assets/images/github-logo.svg" alt="github link">
+                        <img src="assets/images/github-logo.svg" alt="profilo github">
                     </a>
                 </div>
             </div>

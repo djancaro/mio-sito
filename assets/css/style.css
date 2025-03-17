@@ -70,6 +70,43 @@ p {
     margin: 0;
 }
 
+b {
+    font-weight: 500;
+}
+
+.project-title {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.my-name {
+    font-size: 52px;
+    font-weight: 200;
+    color: #241254;
+    line-height: 1.2;
+    letter-spacing: 0.64px;
+    margin: 0;
+    padding: 0;
+}
+
+.job-description {
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+}
+
 header {
     height: 100px;
     width: 100%;
@@ -314,6 +351,21 @@ main {
     color: #12092A;
     transition: 150ms ease-out;
     cursor: pointer;
+}
+
+.btn-primary-disabled {
+    font-family: 'UnicaOne';
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.02px;
+    width: fit-content;
+    height: 48px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 1px solid;
+    margin: 12px 0px;
 }
 
 .btn-secondary {
@@ -914,6 +966,10 @@ label {
 
     h1 {
         font-size: 48px;
+    }
+
+    .my-name {
+        font-size: 40px;
     }
 
     h2 {
