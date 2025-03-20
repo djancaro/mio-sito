@@ -1,16 +1,8 @@
-@font-face {
-    font-family: 'UnicaOne';
-    src: url('../font/UnicaOne/UnicaOne-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('../font/Satoshi/**/*');
-}
+@import './variables.css';
 
 body {
     margin: 0;
-    font-family: 'UnicaOne', sans-serif;
+    font-family: 'Satoshi-Light', sans-serif;
     text-transform: uppercase;
     line-height: 1.5;
     background: 
@@ -22,47 +14,41 @@ body {
     background-size: 100% 100%;
 }
 
+h1, h2, h4, h5 {
+    font-family: 'UnicaOne', sans-serif;
+    line-height: 1.2;
+    color: #241254;
+    margin: 0;
+}
+
 h1 {
     font-size: 60px;
-    color: #241254;
-    line-height: 1.2;
     font-weight: 100;
     letter-spacing: 1.2px;
     text-align: left;
-    margin: 0;
     padding-bottom: 32px;
 }
 
 h2 {
     font-size: 52px;
     font-weight: 200;
-    color: #241254;
-    line-height: 1.2;
     letter-spacing: 0.64px;
-    margin: 0;
 }
 
 h4 {
     font-size: 32px;
     font-weight: 200;
-    color: #241254;
-    line-height: 1.2;
     letter-spacing: 1px;
-    margin: 0;
 }
 
 h5 {
     font-size: 24px;
     font-weight: 200;
-    color: #241254;
-    margin: 0px;
-    line-height: 1.2;
     letter-spacing: 0.48px;
 }
 
 p {
-    font-family: 'Satoshi';
-    font-weight: 100;
+    font-family: 'Satoshi-Light', sans-serif;
     font-size: 16px;
     text-transform: none;
     color: #12092A;
@@ -70,7 +56,7 @@ p {
 }
 
 b {
-    font-weight: 500;
+    font-family: 'Satoshi-Bold', sans-serif;
 }
 
 .project-title {
@@ -148,6 +134,7 @@ nav ul {
 }
 
 .menu-link {
+    font-family: 'UnicaOne', sans-serif;
     text-decoration: none;
     font-size: 20px;
     color: #241254;
@@ -172,6 +159,7 @@ nav ul {
 }
 
 .tab-header a {
+    font-family: 'UnicaOne', sans-serif;
     font-size: 20px;
     color: #241254;
     text-decoration: none;
@@ -206,6 +194,7 @@ nav ul {
 }
 
 .display-text {
+    font-family: 'UnicaOne', sans-serif;
     font-size: 80px;
     letter-spacing: 3px;
     text-align: center;
@@ -251,7 +240,7 @@ nav ul {
 .hero-text {
     color: #fff;
     font-size: 20px;
-    font-family: 'Satoshi', 'sans serif';
+    font-family: 'Satoshi-Light', 'sans serif';
     text-transform: none;
     text-align: center;
     width: 317px;
@@ -330,7 +319,7 @@ main {
 .btn-primary {
     background-color: #4923A9;
     color: #fff;
-    font-family: 'UnicaOne';
+    font-family: 'UnicaOne', sans-serif;
     font-size: 18px;
     font-weight: 100;
     text-transform: uppercase;
@@ -353,7 +342,7 @@ main {
 }
 
 .btn-primary-disabled {
-    font-family: 'UnicaOne';
+    font-family: 'UnicaOne', sans-serif;
     font-size: 18px;
     font-weight: 100;
     text-transform: uppercase;
@@ -371,7 +360,7 @@ main {
     background-color: #fff;
     color: #241254;
     border: #241254 1px solid;
-    font-family: 'UnicaOne';
+    font-family: 'UnicaOne', sans-serif;
     font-size: 18px;
     font-weight: 100;
     text-transform: uppercase;
@@ -522,7 +511,7 @@ footer {
 }
 
 .ts-points {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Light', sans-serif;
     text-transform: none;
     color: #12092A;
     display: flex;
@@ -533,7 +522,7 @@ footer {
 }
 
 .my-projects {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Light', sans-serif;
     text-transform: none;
     color: #12092A;
     display: flex;
@@ -546,7 +535,7 @@ footer {
 }
 
 .social-networks {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Light', sans-serif;
     text-transform: none;
     color: #12092A;
     display: flex;
@@ -571,7 +560,7 @@ footer {
 }
 
 .edu-points {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Light', sans-serif;
     text-transform: none;
     font-weight: 100;
     margin: 8px 0px 24px 24px;
@@ -631,7 +620,7 @@ hr {
     height: 44px;
     border: 1px solid #979595;
     border-radius: 8px;
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Light', sans-serif;
     text-indent: 1em;
 }
 
@@ -640,12 +629,12 @@ textarea {
     border: 1px solid #979595;
     border-radius: 8px;
     margin-bottom: 8px;
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Light', sans-serif;
     padding: 8px 16px;
 }
 
 label {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Light', sans-serif;
     font-size: 16px;
     text-transform: none;
     font-weight: 500;
@@ -753,6 +742,7 @@ label {
     }
 
     .display-text {
+        font-family: 'UnicaOne', sans-serif;
         font-size: 58px;
         line-height: 1.1;
     }
