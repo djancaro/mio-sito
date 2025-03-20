@@ -635,10 +635,9 @@ textarea {
 }
 
 label {
-    font-family: 'Satoshi-Light', sans-serif;
+    font-family: 'Satoshi-Medium', sans-serif;
     font-size: 16px;
     text-transform: none;
-    font-weight: 500;
 }
 
 @media screen and (max-width: 1200px) {
