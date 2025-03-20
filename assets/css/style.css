@@ -5,13 +5,12 @@
 
 @font-face {
     font-family: 'Satoshi';
-    src: url('../font/Satoshi/OTF/');
-
+    src: url('../font/Satoshi/**/*');
 }
 
 body {
     margin: 0;
-    font-family: 'UnicaOne', 'sans-serif';
+    font-family: 'UnicaOne', sans-serif;
     text-transform: uppercase;
     line-height: 1.5;
     background: 
